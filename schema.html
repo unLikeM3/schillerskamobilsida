@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+    <title>My Page</title>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />    
+    <link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.3.2.min.css" />
+    <script type="text/javascript" src="js/energize-min.js"></script>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" src="js/jquery.imagesloaded.min.js"></script>
+    <script type="text/javascript" src="js/imgcache.js"></script>
+    <script type="text/javascript" src="js/jquery.mobile-1.3.2.min.js"></script>
+    <script type="text/javascript" src="js/jscroll.js"></script>
+
+</head>
+<body>
+    <div data-role="page" data-theme="b">
+ 
+        <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme="a">
+            <h1 id="title">Schema</h1>
+            <a id="blimedlembtn" class="ui-btn-right" href="blimedlem.html">Bli Medlem</a>
+        </div>
+        
+        <div id="content" data-role="content">
+            <div class="ui-block-solo"><input type="text" id="pnr" placeholder="YYMMDDXXXX"> </div>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <select id="day">
+                        <option value="1">Måndag</option>
+                        <option value="2">Tisdag</option>
+                        <option value="4">Onsdag</option>
+                        <option value="8">Torsdag</option>
+                        <option value="16">Fredag</option>
+                    </select>
+                </div>
+                <div class="ui-block-b">
+                    <select id="period">
+                        <option value="HT">HT</option>
+                        <option value="VT">VT</option>
+                    </select>
+                </div>
+            </div>
+            <a href="#" data-role="button" onclick="fetchSchedule(); return false;">Hämta schema</a>
+            <div id="schedulecontainer" class="schemabild"></div>
+
+        </div><!-- /content -->
+ 
+        <div data-role="footer" data-position="fixed" data-tap-toggle="false" data-theme="a">
+            <div data-role="navbar">
+                <ul>
+                    <li><a id="home" data-icon="home" data-iconpos="bottom" href="index.html">Nyheter</a></li>
+                    <li><a id="schedule" data-icon="info" data-iconpos="bottom" class="ui-btn-active ui-state-persist" href="schema.html">Schema</a></li>
+                    <li><a id="gallery" data-icon="grid" data-iconpos="bottom" href="gallery.html">Galleri</a></li>
+                </ul>
+            </div>
+        </div><!-- /footer -->
+     <script>
+
+        if (window.localStorage.getItem('pnr') != "undefined" && window.localStorage.getItem('pnr') != null) {
+            $('#pnr').val(window.localStorage.getItem('pnr'));
+        };
+
+        var fetchSchedule = function() {
+            var pnr = $('#pnr').val();
+            var period = $('#period').val();
+            var day = $('#day').val();
+
+            window.localStorage.setItem('pnr', pnr);
+
+            $('#schedulecontainer').html('<div id="spinner"><img src="res/img/spinner.gif"></div>');
+
+            $.post("http://www.schillerskaselevkar.se/loadschedule.php", {pnr: pnr, period: period, day: day}, function(data){
+                $('#schedulecontainer').html(data);
+            });
+        }
+    </script>
+    </div><!-- /page -->
+</body>
+</html>

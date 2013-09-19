@@ -1,0 +1,596 @@
+<!doctype html>
+<html>
+<head>
+    <title>My Page</title>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />    
+    <link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.3.2.min.css" />
+    <script type="text/javascript" src="js/energize-min.js"></script>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" src="js/jquery.imagesloaded.min.js"></script>
+    <script type="text/javascript" src="js/imgcache.js"></script>
+    <script type="text/javascript" src="js/jquery.mobile-1.3.2.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mobile.subpage.js"></script>
+    <script type="text/javascript" src="js/jscroll.js"></script>
+
+</head>
+<body>
+    <div id="one" data-role="page" data-theme="b">
+    <div id="two" data-role="subpage" data-theme="b">
+        <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme="a">
+            <a href="#one" data-icon="back">Tillbaka</a>
+            <h1 id="title">Bli Medlem</h1>
+        </div>
+        
+        <div id="content" data-role="content">
+
+                <div class="ui-block-solo"> <input type="text" id="adress" placeholder="Adress"> </div>
+                <div class="ui-block-solo"> <input type="text" id="coorg" placeholder="C/o adress"> </div>
+                <div class="ui-block-solo"> <input type="text" id="ort" placeholder="Ort"> </div>
+                <div class="ui-block-solo"> <input type="text" id="telnr" placeholder="Telefonnummer (07XXXXXXXX)"> </div>
+                <div class="ui-block-solo"> <input type="text" id="alttelnr" placeholder="Alt. Telefonnummer (07XXXXXXXX)"> </div>
+                <div class="ui-block-solo"> <input type="email" id="email" placeholder="du@nagat.se"> </div>
+                <div class="ui-block-solo">
+                    <a href="#three" data-role="button" data-icon="arrow-r" data-iconpos="right">Nästa</a>
+                </div>
+
+        </div><!-- /content -->
+ 
+        <div data-role="footer" data-position="fixed" data-tap-toggle="false" data-theme="a">
+            <div data-role="navbar">
+                <ul>
+                    <li><a id="home" data-icon="home" data-iconpos="bottom" href="index.html">Nyheter</a></li>
+                    <li><a id="schedule" data-icon="info" data-iconpos="bottom" href="schema.html">Schema</a></li>
+                    <li><a id="gallery" data-icon="grid" data-iconpos="bottom" href="gallery.html">Galleri</a></li>
+                </ul>
+            </div>
+        </div><!-- /footer -->
+    </div><!-- /page -->
+
+    <div id="three" data-role="subpage" data-theme="b">
+ 
+        <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme="a">
+            <a href="#two" data-icon="back">Tillbaka</a>
+            <h1 id="title">Bli Medlem</h1>
+        </div>
+        
+        <div id="content" data-role="content">
+            <div data-role="collapsible">
+                <h4>Information och stadgar</h4>
+            <div class="inlagg">
+                <div class="wrapper">    
+                    <div class="title">
+                        <h2>Vad det innebär att bli medlem i en förening</h2>
+                    </div>
+
+                    <div class="content">
+                        Genom att klicka i denna rutan blir du medlem i Elevkåren/elevrådet vid skolan under 2013.
+                        Du ansluts också till Sveriges Elevkårer, vilket ger din Elevkår/elevråd ett ekonomiskt bidragom Elevkåren ansöker om medlemsbidrag och uppfyller de krav som står i Årsrapportsblanketten.
+                        Inga personuppgifter kommer att lämnas ut av Elevkåren/elevrådet eller Sveriges Elevkårer.
+                    </div>
+                </div>
+            </div>
+            <div class="inlagg">
+                <div class="wrapper">    
+                    <div class="title">
+                        <h2>Vad gör vi med dina personuppgifter?</h2>
+                    </div>
+
+                    <div class="content">
+                        Sveriges Elevkårer följer Personuppgiftslagen och behandlar de personuppgifter ni matar in med noggrann försiktighet. Medlemmarnas personuppgifter lämnas aldrig ut till andra. Dock kan granskare från myndigheter komma till Sveriges Elevkårers förbundskansli och få tillgång till att kontrollera uppgifterna, om deras arbete kräver det. Kom ihåg att ni som förening, enligt Personuppgiftslagen, ansvarar för att informera era medlemmar om att ni kommer lämna deras personuppgifter till Sveriges Elevkårer och att dessa används som underlag för bidragsansökningar och för ringkontroller. Uppgifterna kan även komma att hanteras av Sveriges Elevkårers distrikt för deras bidragsansökningar.Se även till att inte lämna ut era medlemmars personuppgifter i sammanhang som era medlemmar inte aktivt godkänt eller där ni tvivlar på säkerheten kring hanteringen. De uppgifter vi samlar in använder vi som underlag i statsbidragsansökan, landstingsbidragsansökningar, vid ringkontroller och för statistik i olika sammanhang. Undantaget från detta är kontaktpersonens uppgifter. Som kontaktperson för en förening medger du att ditt namn, adress, e-post och telefonnummer får lämnas ut till de som vill komma i kontakt med er förening och till kontrollmyndigheter. Du har också rättigheter och skyldigheter enligt föreningens stadgar.
+                    </div>
+                </div>
+            </div>
+            <div class="inlagg">
+                <div class="wrapper">    
+                    <div class="title">
+                        <h2>Stadgar</h2>
+                    </div>
+
+                    <div class="content">
+                        <p>§1. Organisation
+                        Mom 1. Organisationens juridiska namn är
+                        Schillerskas Elevkår.
+
+                        Mom 2. Schillerskas Elevkår högsta
+                        beslutande organ är årsmötet.
+
+                        Mom 3. Schillerskas Elevkår är partipolitiskt
+                        och religiöst obunden.
+
+                        Mom 4. Schillerskas Elevkår har sitt säte i
+                        länet Västra Götaland, staden Göteborg och är aktiv på
+                        Schillerska Gymnasiet.
+                        </p>
+                        <p>
+                        §2. Syfte
+                        Mom 1. Schillerskas Elevkår skall skapa en
+                        mer givande skoltid för sina medlemmar, och tillvarata
+                        medlemmarnas gemensamma intressen samt skapa en
+                        mötesplats för elever på Schillerska Gymnasiet att frivilligt
+                        och självständigt organisera sig.
+                        </p>
+                        §3. Medlemskap
+                        Mom 1. För att få ett elevmedlemskap i
+                        Schillerskas Elevkår måste man uppfylla följande krav:
+                        Studerar på Schillerska Gymnasiet, betalar den av
+                        årsmötet fastställda elevmedlemskapsavgiften och ställer
+                        sig dessa stadgar till efterrättelse.
+
+                        Mom 2. Elevmedlemskapet är giltigt i tre (3)
+                        år, men medlemmen varje år göra ett aktivt val att fortsätta
+                        vara medlem i Schillerskas Elevkår.
+
+                        Mom 3. Den fastslagna medlemsavgiften på
+                        årsmötet till elevmedlemskapet är en engångsavgift. Den
+                        ska betalas år ett (1) och behöver sedan inte betalas år
+                        två (2) eller år tre (3).
+
+                        Mom 4. Som medlem i Schillerskas Elevkår
+                        med elevmedlemskap har man närvaro-, yttrande-,
+                        förslags- och rösträtt på årsmötet.
+
+                        Mom 5. Stödmedlemskap. För att bli
+                        stödmedlemmar i Schillerskas Elevkår måste man uppfylla
+                        följande krav: Betalar den av årsmötet fastställda
+                        stödmedlemskapsavgiften och ställer sig dessa stadgar till
+                        efterrättelse.
+
+                        Mom 6. Som stödmedlem har man
+                        närvaro- och yttranderätt på årsmötet.
+
+                        Mom 7. Hedersmedlemskap. Syftet med
+                        hedersmedlemmar är att behålla kunskap och erfarenhet
+                        inom Schillerskas Elevkår.
+
+                        Mom 8. Endast kårens sittande styrelsen
+                        kan utse hedersmedlemmar. Dem får utse maximalt två
+                        (2) hedersmedlemmar per kalenderår och samtliga
+                        hedersmedlemmar skall presenteras på nästkommande
+                        årsmöte. Dem kan endast utse hedersmedlemmar som
+                        uppfyller följade krav: Har
+                        studerat på Schillerska
+                        Gymnasiet och har aktivt jobbat för att stärka schillerskaandan.
+
+                        Mom 9. Hedersmedlemskap innehar man
+                        på livstid.
+
+                        Mom 10. Som hedersmedlem har man
+                        närvaro- och yttranderätt på årsmöten och samtliga
+                        styrelsemöten.
+
+                        Mom 11. Samtliga medlemskapsformer kan
+                        avslutas av medlemmen själv när som helst.
+
+                        §4. Kommittéer
+                        Mom 1. Kommittéers syfte är att jobba med
+                        ett specifikt område och därigenom hjälpa kåren att
+                        uppfylla §2.
+
+                        Mom 2. En kommitté kan startas och utses
+                        när som helst av styrelsen.
+
+                        Mom 3. En kommitté existerar från och med
+                        datumet den startats och existerar till och med
+                        Schillerskas Elevkårs årsmöte då medlemmarna får rösta
+                        om kommittén skall fortsätta vara verksam och då också
+                        få utmärkelsen: officiell kommitté.
+
+                        Mom 4. En officiell kommittés ordförande
+                        skall utses på kårens årsmöte. Om årsmötet ej väljer en
+                        ordförande för en officiell kommitté är det styrelsens
+                        uppgift att utse en lämplig ordförande för den officiella
+                        kommittén snarast möjligt. Övriga medlemmar i kommittén
+                        skall utses av styrelsen i samråd med kommitténs
+                        ordförande.
+
+                        Mom 5. För att sitta i en kommitté skall man
+                        ha ett elevmedlemskap som beskrivs i §3.
+
+                        §5. Föreningar
+                        Mom 1. Alla som innehar ett
+                        elevmedlemskap som beskrivs i §3 kan starta en förening.
+
+                        Mom 2. En förening skall bestå av minst tre
+                        medlemmar varav en ordförande.
+
+                        Mom 3. Alla i föreningen skall ha ett
+                        elevmedlemskap som beskrivs i §3.
+
+                        Mom 4. En förening skall ha ett årsmöte
+                        varje kalenderår.
+
+                        Mom 5. En förening har varje läsår rätt till ett
+                        ekonomiskt bidrag från Schillerskas Elevkår.
+
+                        Mom 6. En förening har varje kalenderår rätt
+                        till en föreningsutbildning arrangerad av Schillerskas
+                        Elevkår.
+
+                        Mom 7. En förening som mottagit
+                        ekonomiskt bidrag skall redovisa för Schillerskas Elevkårs
+                        styrelse vad de gjort med bidraget och lämna en skriftlig
+                        rapport av sin verksamhet en gång per kalenderår.
+
+                        §6. Hedersmedlemmar
+                        Mom 1. Hedersmedlemmarnas ordförande
+                        väljs varje nytt decennium vid en sluten omröstning där
+                        endast hedersmedlemmar får rösta.
+
+                        Mom 2. Hedersmedlemmarna skall mist en
+                        gång vart fjärde (4) år kalla till ett hedersmöte.
+
+                        Mom 3. Om hedersmedlemmarna känner
+                        att kåren på något sätt befinner sig i ett kritiskt läge måste
+                        de kalla sittande styrelse till ett gemensamt möte.
+
+                        Mom 4. Hedersmedlemmarna kan en gång
+                        per kalenderår kalla till kunskapsmiddag.
+
+                        Mom 5. Om hedersmedlemmarna kallat till
+                        kunskapsmiddag är det styrelsens uppgift att anordna en
+                        gemensam middag för styrelsen och
+                        hedersmedlemmarna inom de närmaste åtta (8)
+                        veckorna.
+
+                        §7. Årsmöte
+                        Mom 1. Årsmötet som beskrivet i §1 Mom
+                        2 är Schillerskas Elevkårs högst beslutande organ.
+
+                        Mom 2. Ett årsmöte skall hållas varje
+                        kalenderår.
+
+                        Mom 3. Kallelse till årsmötet skall vara
+                        samtliga medlemmar tillhanda tjugo (20) skoldagar innan
+                        årsmötet.
+
+                        Mom 4. Kallelsen skall innehålla information
+                        om plats och tid för årsmötet.
+
+                        Mom 5. Propositioner,
+                        verksamhetsberättelse samt ekonomiska berättelsen skall
+                        vara tillgängligt för alla medlemmar femton (15) skoldagar
+                        innan årsmötet.
+
+                        Mom 6. Motioner skall vara styrelsen
+                        tillhanda tio (10) skoldagar innan årsmötet.
+
+                        Mom 7. Motionssvar samt valberedningens
+                        förslag skall vara tillgängliga för medlemmarna fem (5)
+                        skoldagar innan årsmötet.
+
+                        Mom 8. Närvaro-, yttrande-, förslags- och
+                        rösträtt på årsmötet regleras i §3.
+
+                        Mom 9. Samtliga val, förutom personval,
+                        sker genom acklamation i första hand, därefter genom
+                        votering om så begärs, och därefter genom rösträkning
+                        om så begärs.
+
+                        Mom 10. Personval sker genom sluten
+                        omröstning om det finns mer än en möjlig kandidat till
+                        posten, om så inte är fallet sker omröstning genom
+                        acklamation.
+
+                        Mom 11. Alla med yttranderätt på årsmötet
+                        har rätt att begära votering och rösträkning, om någon
+                        begär det så skall det verkställas.
+
+                        Mom 12. Alla handlingar samt
+                        mötesprotokoll från årsmötet skall vara utskrivna, justerade
+                        och finnas tillgängliga för medlemmarna senast fyra (4)
+                        veckor efter årsmötets slut.
+
+                        Mom 13. Årsmöte skall hållas senast sista
+                        fredagen i april.
+
+                        Mom 14. Följande punkter skall behandlas
+                        på årsmötet:
+                        • Mötets öppnande.
+                        • Val av ordförande, sekreterare och två (2)
+                        justerare tillika rösträknare för årsmötet.
+                        • Fastställande av röstlängd.
+                        • Fråga om huruvida årsmötet blivit utlyst enligt
+                        stadgan.
+                        • Fastställande av dagordning.
+                        • Fastställande av arbetsordning.
+                        • Presentation och godkännande av
+                        verksamhetsberättelse.
+                        • Presentation och godkännande av ekonomisk
+                        berättelse och bokslut.
+                        • Revisorsberättelse.
+                        • Beslut om ansvarsfrihet för den avgående
+                        styrelsen.
+                        • Behandling av propositioner och motioner.
+                        • Fastställande av styrelsens storlek.
+                        • Val av ordförande.
+                        • Val av vice ordförande.
+                        • Val av ledamöter.
+                        • Val av valberedning.
+                        • Val av revisorer.
+                        • Behandling av kommittéer
+                        • Fastställande av elevmedlemskapsavgiften och
+                        stödmedlemskapsavgiften.
+                        • Presentation av hedersmedlemmar.
+                        • Mötets avslutande.
+
+                        §8. Styrelsen
+                        Mom 1. Styrelsen är ansvarig för
+                        Schillerskas Elevkårs förvaltning och verksamhet mellan
+                        årsmötena.
+
+                        Mom 2. Styrelsens uppgift är att arbeta i
+                        enlighet med organisationens syfte §2 Mom 1.
+
+                        Mom 3. Om ordförande avgår skall vice
+                        ordförande ta dennes plats och ny vice ordförande skall
+                        utses inom styrelsen.
+
+                        Mom 4. Om vice ordförande avgår skall ny
+                        vice ordförande utses inom styrelsen.
+
+                        Mom 5. Om både ordförande och vice
+                        ordförande avgår skall ledamöterna kalla till ett extrainsatt
+                        årsmöte där ny ordförande och vice ordförande skall
+                        tillsättas.
+
+                        Mom 6. Om fler än en ledamot avgår skall
+                        resterade styrelse kalla till extrainsatt årsmöte där nya
+                        ledamöter skall tillsättas.
+
+                        Mom 7. Styrelsen väljs på årsmötet och
+                        skall bestå av ett jämt antal styrelsemedlemmar.
+
+                        Mom 8. Vid omröstning inom syrelsen
+                        räknas ordförandes röst som en och en halv röst (1.5).
+
+                        Mom 9. För att sitta i styrelsen för
+                        Schillerskas Elevkår skall man ha ett elevmedlemskap.
+
+                        §9. Extrainsatt årsmöte
+                        Mom 1. Extrainsatt årsmöte kan kallas av
+                        styrelsen.
+
+                        Mom 2. Extrainsatt årsmöte skall kallas av
+                        styrelsen snarast möjligt om medlemmarna lämnar in en
+                        förfrågan om extrainsatt årsmöte där en fjärdedel (1/4) av
+                        medlemmarna med elevmedlemskap har skrivit på en
+                        namninsamling om att ett extrainsatt årsmöte skall utlysas.
+
+                        Mom 3. Revisorer kan kalla till extrainsatt
+                        årsmöte.
+
+                        Mom 4. Kallelsen till extrainsatt årsmöte skall
+                        vara medlemmarna tillhanda femton (15) skoldagar innan
+                        det extrainsatta årsmötet.
+
+                        §10. Valberedning
+                        Mom 1. Valberedningens uppgift är att
+                        bereda valen inför årsmötet.
+
+                        Mom 2. Valberedning skall föreslå en person
+                        till samtliga poster.
+
+                        Mom 3. Valberedningen har närvaro-,
+                        förslags- och yttranderätt vid årsmöten samt närvarorätt
+                        på samtliga styrelsemöten.
+
+                        Mom 4. Som valberedning får man ej sitta i
+                        Schillerskas Elevkårs styrelse eller som revisor för
+                        Schillerskas Elevkår.
+
+                        §10. Revisorer
+                        Mom 1. Revisorernas uppgift är att granska
+                        styrelsens arbete.
+
+                        Mom 2. Minst två revisorer skall väljas på
+                        årsmötet.
+
+                        Mom 3. Revisorerna har närvaro-, förslagsoch
+                        yttranderätt vid årsmöten. Revisorerna har rätt att
+                        närvara vid styrelsemöten och ha full insyn i samtliga
+                        dokument som har anknytning till Schillerskas Elevkår.
+
+                        Mom 4. Revisorerna skall lämna in en skriftlig
+                        revisorsberättelse till styrelsen senast åtta (8) skoldagar
+                        innan årsmötet. Rapporten skall sedan redovisas på
+                        årsmötet och det är styrelsens uppgift att göra rapporten
+                        tillgänglig för medlemmarna innan årsmötet.
+
+                        Mom 5. Som revisor får man ej sitta i
+                        Schillerskas Elevkårs styrelse eller valberedning.
+
+                        §11. Omröstning
+                        Mom 1. Om inget annat nämns i stadgan
+                        så gäller enkel majoritet vid omröstning.
+
+                        Mom 2. Samtliga styrelsemedlemmar skall
+                        väljas in med egen majoritet.
+
+                        Mom 3. Om inget annat anges skall vid lika
+                        röstetal mötesordförande välja mellan tärningskast eller
+                        singlandet av en slant för att avgöra.
+
+                        Mom 4. Vid lika röstetal vid personval med
+                        fler än två (2) kandidater skall ny omröstning genomföras
+                        mellan dessa kandidater.
+
+                        Mom 5. Om inte tillräckligt många personer
+                        får egen majoritet vid val av styrelsemedlemmar skall ny
+                        omröstning ske, då krävs det ej egen majoritet.
+
+                        §12. Stadgeändring
+                        Mom 1. Stadgeändring kan ske genom två
+                        tredjedels (2/3) majoritet om förslag på stadgeändring
+                        inkommit som motion eller proposition.
+
+                        Mom 2. Stadgeändring som inte
+                        inkommit
+                        genom motion eller proposition måste få nio tiondels
+                        (9/10) majoritet.
+
+                        Mom 3. Vid stadgeändring genom motion
+                        eller proposition skall hedersmedlemmarna lämna
+                        proposition/motionssvar till styrelsen två (2) skoldagar
+                        innan årsmötet, styrelsen har i uppgift att en skoldag innan
+                        årsmötet göra hedersmedlemmarnas
+                        proposition/motionssvar tillgängligt för medlemmarna.
+
+                        §13. Uteslutning
+                        Mom 1. Årsmötet har rätt att utesluta
+                        medlemmar genom omröstning med två tredjedels (2/3)
+                        majoritet.
+
+                        Mom 2. Styrelsen har rätt att stänga av
+                        medlemmar om dem anser att medlemmen har brutit mot
+                        stadgar, lagen eller aktivt försökt att förstöra för
+                        organisationen. På nästkommande årsmöte beslutar
+                        årsmötet om avstängda medlemmar skall uteslutas. En
+                        avstängd medlem förlorar sina rättigheter som medlem
+                        fram till årsmötet.
+
+                        §14. Tolkning av stadgar
+                        Mom 1. Styrelsen har tolkningsrätt av
+                        stadgan.
+
+                        Mom 2. Vid oklarhet hur stadgan skall
+                        tolkas, skall revisor eller hedersmedlem rådfrågas.
+                        Vid
+                        ytterligare oklarhet efter rådfrågning av revisor eller
+                        hedersmedlem skall frågan lyftas på nästkommande
+                        årsmöte där årsmötet avgörs hur stadgan skall tolkas.
+
+                        §15. Teckningsrätt
+                        Mom 1. Föreningen tecknas gemensamt av
+                        styrelsen eller av den som styrelsen därtill utser.
+
+                        Mom 2. Styrelsen kan utse icke medlemmar
+                        till firmatecknare av föreningen.
+
+                        §16. Upplösning
+                        Mom 1. Upplösning av Schillerskas Elevkår
+                        kan endast ske genom motion eller proposition till
+                        årsmöte.
+
+                        Mom 2. Upplösningen kan endast ske vid
+                        två på varandra följande ordinarie årsmöten med fyra
+                        femtedelar (4/5) majoritet vid båda årsmötena.
+
+                        Mom 3. För att upplösningen ska vara giltig
+                        måste efter beslut om upplösning av Schillerskas Elevkår
+                        en medlem från Schillerskas Elevkår ställa sig en dag efter
+                        årsmötet kl 12.00 på Schillerska gymnasiets skolgård och
+                        högt och tydligt ropa ”Schillerskas Elevkår är död, men
+                        minnet av den kommer alltid att bestå”.
+
+                        Mom 4. Vid upplösning av Schillerskas
+                        Elevkår skall tillgångarna fördelas mellan de andra
+                        elevkårerna i Göteborgs kommun.
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="ui-block-solo">
+                <label><input type="checkbox" name="checkbox-0" id="acceptTerms" value="1" /> Jag accepterar stadgarna </label>
+            </div>
+
+            <div class="ui-block-solo">
+                <button disabled id="blimedlemsub" onclick="addMember(); return false;">Bli Medlem</button>
+            </div>              
+
+            <a id="lnkpopup" href="#popup" data-rel="popup" data-position-to="window" style="display:none;"></a>
+            <div id="popup" data-role="popup" data-overlay-theme="a" class="ui-content">
+                <p>POPUUUUP</p>
+            </div>
+        </div><!-- /content -->
+ 
+        <div data-role="footer" data-position="fixed" data-tap-toggle="false" data-theme="a">
+            <div data-role="navbar">
+                <ul>
+                    <li><a id="home" data-icon="home" data-iconpos="bottom" href="index.html">Nyheter</a></li>
+                    <li><a id="schedule" data-icon="info" data-iconpos="bottom" href="schema.html">Schema</a></li>
+                    <li><a id="gallery" data-icon="grid" data-iconpos="bottom" href="gallery.html">Galleri</a></li>
+                </ul>
+            </div>
+        </div><!-- /footer -->
+    </div><!-- /page -->
+        <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme="a">
+            <h1 id="title">Bli Medlem</h1>
+        </div>
+        
+        <div id="content" data-role="content">
+            <div>
+                <div class="ui-block-solo"> <input type="text" id="fName" placeholder="Förnamn"> </div>
+                <div class="ui-block-solo"> <input type="text" id="lName" placeholder="Efternamn"> </div>
+                <div class="ui-block-solo"> <input type="text" id="persnr" placeholder="Personnummer (YYMMDDXXXX)"> </div>
+                <div class="ui-block-solo">
+                    <select id="kon">
+                        <option>Kön</option>
+                        <option value="man">Juridisk Man</option>
+                        <option value="kvinna">Juridisk Kvinna</option>
+                    </select>
+                </div>   
+                <div class="ui-block-solo">
+                    <select id="arskurs">
+                        <option value="1">Årskurs 1</option>
+                        <option value="2">Årskurs 2</option>
+                        <option value="3">Årskurs 3</option>
+                    </select>
+                </div>
+                <div class="ui-block-solo">
+                    <a href="#two" data-role="button" data-icon="arrow-r" data-iconpos="right">Nästa</a>
+                </div>
+            </div>
+        </div><!-- /content -->
+ 
+        <div data-role="footer" data-position="fixed" data-tap-toggle="false" data-theme="a">
+            <div data-role="navbar">
+                <ul>
+                    <li><a id="home" data-icon="home" data-iconpos="bottom" href="index.html">Nyheter</a></li>
+                    <li><a id="schedule" data-icon="info" data-iconpos="bottom" href="schema.html">Schema</a></li>
+                    <li><a id="gallery" data-icon="grid" data-iconpos="bottom" href="gallery.html">Galleri</a></li>
+                </ul>
+            </div>
+        </div><!-- /footer -->
+    </div><!-- /page -->
+
+    <script>
+        var addMember = function(){
+            var fname = $('#fName').val();
+            var lname = $('#lName').val();
+            var persnr = $('#persnr').val();
+            var telnr = $('#telnr').val();
+            var email = $('#email').val();
+            var arskurs = $('#arskurs').val();
+            var acceptTerms = $('#acceptTerms').val();
+            var popup = $('#popup');
+            var lnkpopup = $('#lnkpopup');
+            var co = $('#co').val();
+            var adress = $('#adress').val();
+            var ort = $('#ort').val();
+            var alttelnr = $('#alttelnr').val();
+            var kon = $('#kon').val();
+
+            $.post("http://www.schillerskaselevkar.se/memberhandler.php", {fornamn: fname, efternamn: lname, persnr: persnr, email: email, arskurs: arskurs, telnr: telnr, acceptTerms: acceptTerms, co: co, adress: adress, ort: ort, alttelnr: alttelnr, kon: kon}, function(data){
+                popup.html(data);
+                
+                $('#lnkpopup').click();
+            });
+        }
+        
+        var checkbox = $('#acceptTerms');
+        var subbtn = $('#blimedlemsub');
+
+        checkbox.change(function(){
+            if (checkbox.attr('checked')) {
+                subbtn.button('enable');
+            }else{
+                subbtn.button('disable');
+            }
+        });
+    </script>
+
+</body>
+</html>

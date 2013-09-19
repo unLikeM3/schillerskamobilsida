@@ -1,0 +1,133 @@
+/**/
+.ui-page {
+    -webkit-backface-visibility: hidden;
+} 
+
+a {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+.padding{
+	padding:10px 10px 10px 10px;
+}
+
+/*
+CSS för inlägg
+*/
+.inlagg {
+	text-shadow: none;
+	box-shadow: none;
+	margin-bottom:20px;
+	background-color:#FFF;
+	border-radius: 10px 10px 10px 10px;
+	opacity: 0.9;
+	-moz-opacity: 0.9;
+	-webkit-opacity: 0.9;
+	-khtml-opacity: 0.9;
+}
+.inlagg .wrapper {
+	padding:10px 10px 10px 10px;
+}
+.inlagg .wrapper .title {
+	/* border-bottom: 1px solid #000; */
+	color: #08c;
+	opacity: 1.0;
+	-moz-opacity: 1.0;
+	-webkit-opacity: 1.0;
+	-khtml-opacity: 1.0;
+}
+
+.inlagg .wrapper .title h2 {
+	font-size: 20px;
+	font-weight: bold;
+	padding-bottom: 10px;
+}
+
+.inlagg .wrapper .content {
+	margin-top:10px;
+	color:#000;
+	font-size: 14px;
+	opacity: 1.0;
+	-moz-opacity: 1.0;
+	-webkit-opacity: 1.0;
+	-khtml-opacity: 1.0;
+}
+
+.inlagg .wrapper .content a img {
+	width:100%;
+	height:auto;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.inlagg .wrapper .content iframe {
+	width:100%;
+	height:auto;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.inlagg .wrapper .meta {
+
+}
+
+
+/*
+CSS för Galleri
+*/
+.galleryinlagg {
+	text-shadow: none;
+	box-shadow: none;
+	margin-bottom:20px;
+	background-color:#FFF;
+	border-radius: 10px 10px 10px 10px;
+	opacity: 0.9;
+	-moz-opacity: 0.9;
+	-webkit-opacity: 0.9;
+	-khtml-opacity: 0.9;
+}
+
+.galleryinlagg .wrapper {
+	padding: 10px 10px 10px 10px;
+	opacity: 1.0;
+	-moz-opacity: 1.0;
+	-webkit-opacity: 1.0;
+	-khtml-opacity: 1.0;
+}
+
+.galleryinlagg .wrapper .title {
+	color: #08c;
+	margin-bottom: 10px;
+}
+
+.galleryinlagg .wrapper .title h2 {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.galleryinlagg .wrapper img {
+	width:100%;
+	height:auto;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.galleryinlagg .wrapper .description {
+	font-size: 14px;
+	margin-top:5px;
+	width:100%;
+	height:auto;
+}
+
+/*
+CSS för Schema
+*/
+.schemabild img{
+	width: 100%
+}
+
+#spinner{
+	height: 40px; 
+	width: 40px; 
+	margin:0 auto;
+}
